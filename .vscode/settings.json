@@ -1,0 +1,14 @@
+{
+  "window.zoomLevel": 1,
+  "editor.wordWrap": "on",
+  "files.autoSave": "onFocusChange",
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "editor.renderWhitespace": "all",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "liveServer.settings.port": 5501
+}

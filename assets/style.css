@@ -1,0 +1,184 @@
+/* Regla CSS consta de 2 partes
+
+1 Selector: es el elemento HTML al que le aplicaremos el estilo.
+2 Bloque de Declaraciones: cada uno de los atributos que modificaremos: atributo:valor; */
+
+h1 {
+  color: rgb(241, 241, 245);
+  background-color: rgb(34, 5, 53);
+}
+
+/* Estilos a nivel de etiquetas: */
+
+h2 {
+  color: azure;
+  background-color: indigo;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilos a nivel de id: */
+#texto-inicial {
+  background-color: beige;
+}
+
+/* Estilos a nivel de clases: Tratar de organizarlas alfabéticamente..*/
+
+.bg-skyblue {
+  background-color: rgb(3, 3, 80);
+  color: white;
+}
+
+.text-30 {
+  font-size: 30px;
+}
+
+/* hijos directos */
+
+.hijos-directos > li {
+  background-color: goldenrod;
+}
+
+/* hijos indirectos */
+
+.hijos-indirectos b {
+  background-color: greenyellow;
+}
+
+/* hermanos generales y adyacentes */
+
+.hermanos-generales ~ li {
+  background-color: cadetblue;
+}
+
+.hermanos-adyacentes + li {
+  background-color: rgb(230, 164, 117);
+}
+
+/* selectores de atributo  */
+.selectores-atributos a[href] {
+  color: blue;
+}
+
+.selectores-atributos a[target="_blank"] {
+  color: green;
+}
+
+.selectores-atributos a[href*="mircha"] {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.selectores-atributos a[href^="http:"] {
+  font-size: 24px;
+  color: brown;
+  text-decoration: none;
+}
+
+.selectores-atributos a[href$="cursos"] {
+  background-color: black;
+}
+
+.selectores-atributos a[class~="cursos"] {
+  background-color: black;
+}
+.selectores-atributos a[class~="inicio"] {
+  background-color: yellow;
+}
+
+/* Se aplica este estilo si en las clases se tiene la palabra cursos seguido de un guíon - */
+.selectores-atributos a[class|="cursos"] {
+  background-color: yellow;
+}
+
+/* Selector Universal */
+
+* {
+  font-family: sans-serif;
+}
+
+.primary-button:hover {
+  background-color: blue;
+}
+
+/* Pseudo-Clases */
+
+.form-pseudoclases *:required {
+  border-color: rgb(168, 113, 219);
+}
+
+.form-pseudoclases *:valid {
+  border-color: rgb(2, 129, 42);
+}
+.form-pseudoclases *:focus {
+  background-color: rgb(153, 164, 233);
+}
+
+.menu-pseudoclases a:hover {
+  color: rgb(14, 139, 135);
+  font-size: 18px;
+}
+
+/* Pseudoclase Target, para activar los estilos dependiendo si en la url del sitio estámos posicionados en una sección cun un id específico, en el siguiente ejemplo se aplica a la sección del menú */
+
+#temario:target {
+  background-color: rgb(163, 233, 233);
+}
+
+/* Pseudo-clases por posición del elemento */
+
+.pseudoclases-posicion li:first-child {
+  color: brown;
+}
+
+.pseudoclases-posicion li:last-child {
+  color: yellowgreen;
+}
+
+/* Se indica el número de la posición */
+.pseudoclases-posicion li:nth-child(3) {
+  color: blueviolet;
+}
+
+/* Se indica de cuanto en cuanto se debe aplicar el estilo */
+.pseudoclases-posicion li:nth-child(3n) {
+  font-weight: bold;
+}
+
+/* Se indica que se debe aplicar el estilo dependiendo si el elemento está en un posición ár o impar*/
+.pseudoclases-posicion li:nth-child(even) {
+  background-color: bisque;
+}
+.pseudoclases-posicion li:nth-child(odd) {
+  background-color: rgb(244, 197, 140);
+}
+
+/* Pseudoelementos para el párrafo de muñecos navideños*/
+
+.descripcion::after {
+  content: "🎅";
+}
+
+.precio::before {
+  content: "$";
+}
+
+.precio::after {
+  content: "COP";
+}
+
+/* Pseudoelementos para el párrafo ejemplo*/
+
+.p-pseudoelementos::first-letter {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.p-pseudoelementos::first-line {
+  background-color: bisque;
+}
+
+.p-pseudoelementos::selection {
+  background-color: rgb(16, 16, 16);
+  color: green;
+}

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="icon" href="/imagenes/soportar.png" />
+    <link rel="apple-touch-icon" href="/imagenes/soportar.png" />
+    <meta name="theme-color" content="#5AFC" />
+    <title>CSS</title>
+
+  </head>
+
+  <body>
+    <section id="temario">
+      <button><a href="/index.html">Volver</a></button>
+      <h3 >Temario</h3>
+      <ul >
+        <li><a href="/css.html#aplicacion">Formas de Aplicación.</a></li>
+        <li><a href="/css.html#selectores-basicos">Selectores básicos</a></li>
+        <li><a href="/css.html#selectores-avanzados">Selectores avanzados</a></li>
+        <li><a href="/css.html#pseudo-clases">Pseudo-classes</a></li>
+        <li><a href="/css.html#pseudoelementos">Pseudoelementos</a></li>
+        <li><a href=""></a></li>
+      </ul>
+      <hr />
+      <h1>Aprendiendo CSS</h1>
+      <p class="text-30 bg-skyblue"><i>Cascading Style Sheets</i> - Hojas de estilo en cascada.</p>
+      <h2 id="aplicacion">Formas de Aplicación</h2>
+      <p>
+        &lt;style/&gt; - Puede aplicarse directamente en la etiqueta HTML,
+        mediante la definición de esta etiqueta en el head del HTML, o la manera
+        recomendada que es mediante un link ligado a un archivo .css
+      </p>
+    </section>
+    <hr />
+    <section id="selectores-basicos">
+      <h2>Selectores básicos</h2>
+      <ol>
+        <li>Etiquetas - Elemenots de HTML</li>
+        <li>Id - Con el uso del #</li>
+        <li>Clases</li>
+      </ol>
+  
+      <h3>Style por etiqueta.</h3>
+      <pre>
+        <code>
+          p {
+            background-color: coral;
+          }
+        </code>
+      </pre>
+  
+      <h3>Style por ID.</h3>
+      <pre>
+        <code>
+          #texto-inicial {
+            background-color: beige;
+          }
+  
+          el identificador id debe estar asignado en la etiqueta HTML. Es considerado una mala práctica usando únicamente el estándar CSS.
+        </code>
+      </pre>
+      <h3>Style por classes.</h3>
+      <article>Permite reutilizar clases de forma óptima y asignar varias clases a un mismo elemento.</article>
+      <pre>
+        <code>
+        .texto-30 {
+             font-size: 30px;
+        }
+        </code>
+      </pre>
+      <a href="/css.html#temario">⬆️</a>
+    </section>
+    <br><hr>
+    <section id="selectores-avanzados">
+      <h2>Selectores avanzados</h2>
+
+      <h3>Slectores de hijos</h3>
+      <h4>Selector de hijos directos</h4>
+
+      <p>Aplica los estilos para el primer nivel despues del elemento padre, y se indica con el símbilo &gt;, en el siguiente caso se aplica la siguiente clase al la etiqueta &lt;ul  class="hijos-directos" &gt; y se ven reflejados los estilos en los li. ejemplo:</p>
+      
+      <pre>
+        <code>
+          .hijos-directos > li {
+            background-color: goldenrod;
+          } 
+        </code>
+      </pre>
+
+      <ul class="hijos-directos">
+        <li><b>Invierno</b></li>
+        <li><b>Verano</b></li>
+        <li><b>Primavera</b></li>
+        <li><b>Otoño</b></li>
+      </ul>
+
+      <h4>Selector de hijos descendientes</h4>
+
+      <p>Aplica para los elementos descendientes definidos en el CSS, separados por un espacio de la siguiente manera, dónde se asigna el estilo a la etiqueta b:</p>
+
+            <pre>
+        <code>
+          .hijos-indirectos b {
+            background-color: goldenrod;
+          } 
+        </code>
+      </pre>
+
+      <ul class="hijos-indirectos">
+        <li><i><b>Invierno</b></i></li>
+        <li><b>Verano</b></li>
+        <li><b>Primavera</b></li>
+        <li><b>Otoño</b></li>
+      </ul>
+    <a href="/css.html#temario">⬆️</a>
+    <h3>Slectores de hermanos</h3>
+    <h4>Selector de hermanos generales y Adyacente</h4>
+    <p>Con los selectores de hermanos podemos aplicar estilos a los elementos que se encuentran por debajo del elemento al que le aplicamos la clase. Hermanos generales se usa con el simbolo ~ y aplica el estilos a todos los elementos que estén por debajo y hermanos adyacente se simboliza con el + y aplica estilos sólo al primer elementos que se encuentra por debajo del elemento al que se asigna la clase.</p>
+
+    <h4>Hermanos generales</h4>
+   
+    .hermanos-generales ~ li {
+        background-color: cadetblue;
+      }
+      <ul>
+        <li><i><b>Invierno</b></i></li>
+        <li class="hermanos-generales"><b>Verano</b></li>
+        <li><b>Primavera</b></li>
+        <li><b>Otoño</b></li>
+      </ul>
+
+      <h4>Hermanos Adyacentes</h4>
+      .hermanos-adyacentes + li {
+        background-color: rgb(230, 164, 117);
+      }
+
+      <ul>
+        <li><i><b>Invierno</b></i></li>
+        <li class="hermanos-adyacentes"><b>Verano</b></li>
+        <li><b>Primavera</b></li>
+        <li><b>Otoño</b></li>
+      </ul>
+    <a href="/css.html#temario">⬆️</a>
+    <h3>Slectores por atributos.</h3>
+
+    <nav class="selectores-atributos">
+      <ul>
+        <li><a href="https://jonmircha.com" target="_blank" class="btn inicio">Inicio</a></li>
+        <li><a href="https://jonmircha.com/cursos" target="_blank" >Cursos</a></li>
+        <li><a href="https://jonmircha.com/blog" >Blog</a></li>
+        <li><a href="https://jonmircha.com/mentoria" target="_blank" >Mentoría</a></li>
+        <li><a href="http://jonmircha.com/hola" target="_blank" >Hola</a></li>
+      </ul>
+    </nav>
+    
+    <table>
+      <th colspan="2">Principales selectores por Atributos</th>
+      <tr>
+        <td><b><i>.selectores-atributos a[href] {color: blue;}</i></b></td>
+      <tr>
+        <td>Aplicará el estilos a los elemetos que tengan el atributo href en la etiqueta a dónde se defina la clase.</td>
+      </tr>
+
+      <tr>
+        <td><b><i>.selectores-atributos a[target="_blank"] {color: green;}</i>/b></td>
+      <tr>
+        <td>Aplicará el estilos a los elemetos que tengan el atributo target en con valor _blank.</td>
+      </tr>
+      <tr>
+        <td><b><i>.selectores-atributos a[href*="mircha"] {font-family: Arial, Helvetica, sans-serif;}</i></b></td>
+      <tr>
+        <td>Aplicará el estilos a los elemetos que tengan en el atributo href el valor mircha en su contenido.</td>
+      </tr>
+      <tr>
+        <td><b><i>.selectores-atributos a[href^="http:"] {color: brown;}</i></b></td>
+      <tr>
+        <td>Aplicará el estilos a los elemetos que tengan en el atributo href con el valor http: al inicio</td>
+      </tr>
+      <tr>
+        <td><b><i>.selectores-atributos a[href$="cursos"] background-color: black;}</i></b></td>
+      <tr>
+        <td>Aplicará el estilos a los elemetos que tengan en el atributo href con el valor cursos al final</td>
+      </tr>
+      <tr>
+        <td><b><i>.selectores-atributos a[class~="cursos"] {background-color: yellow;}</i></b></td>
+      <tr>
+        <td>Aplicará el estilos a los elemetos que tengan en sus class asignadas la parabra cursos.</td>
+      </tr>
+
+
+    </table>
+    <br>
+    <h3>Selector Universal (*)</h3>
+
+    Se aplica el estilo a todo el sitio:
+
+    * {
+      font-family: sans-serif;
+      }
+    <br>
+    Se aplica el estilo a toda la sección que tome la clase:
+
+   <i>.selector-universal *{} </i>
+    <br>
+   <a href="/css.html#temario">⬆️</a>
+   </section>
+   <section id="pseudo-clases">
+
+    <h2>Pseudo-Classes</h2>
+
+    <a href="https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes" target="_blank">Documentación MDN</a>
+    <p>Las Pseudo-classes permiten dar estilo a los elementos dependiendo de su estado, posición, e interactividad del elemento con el usuario.</p>
+
+    <form class="form-pseudoclases">
+      <input type="text" placeholder="Ingresa tu nombre" required>
+      <br><br>
+      <input type="email" placeholder="Ingresa tu correo" required>
+      <br><br>
+      <button type="submit">Enviar</button>
+      <button type="reset">Resetear</button>
+      
+    </form>
+
+    <dl>
+      <dt> .form-pseudoclases *:required 
+        <dd>Aplicará border-color: (lila);
+}       a los elementos que tengan el atributo required.</dd>
+      </dt>
+      <dt> .form-pseudoclases *:valid 
+        <dd>Aplicará border-color: (verde);
+}       a los elementos se diligencien con valores validos.</dd>
+      </dt>
+      <dt> .form-pseudoclases *:focus 
+        <dd>background-color: lila claro; aplicará el estilo 
+}       a los elementos se tengan seleccionados.</dd>
+      </dt>
+    </dl>
+
+    <nav class="menu-pseudoclases">
+      <a href="#seccion1">Sección 1</a>
+      <a href="#seccion2">Sección 2</a>
+      <a href="#seccion3">Sección 3</a>
+      <a href="#seccion4">Sección 4</a>
+
+    </nav>
+    <p> Estos estilos se logran con el atributo hover en la cosntrucción de la clase</p>
+    <pre>
+      <code>
+        .menu-pseudoclases a:hover {
+           color: rgb(Agua marina);
+           font-size: 18px;
+          }
+      </code>
+    </pre>
+
+    <h4>Pseudo-clases por posición del elemento</h4>
+    <details> 
+      <summary>Ejemplo</summary>
+      <div>
+        <ol class="pseudoclases-posicion">
+                <li>Oscar</li>
+          <li>Giovanny</li>
+          <li>Clavijo</li>
+          <li>Gutiérrez</li>
+          <li>Eri</li>
+          <li>Iris</li>
+          <li>Ceci</li>
+          <li>Ino</li>
+          <li>Lucho</li>
+          <li>Janeth</li>
+        </ol>
+    
+        <pre>
+          <code>
+            /* Pseudo-clases por posición del elemento */
+    
+            .pseudoclases-posicion li:first-child {
+              color: brown;
+            }
+    
+            .pseudoclases-posicion li:last-child {
+              color: yellowgreen;
+            }
+    
+            /* Se indica el número de la posición */
+            .pseudoclases-posicion li:nth-child(3) {
+              color: blueviolet;
+            }
+    
+            /* Se indica de cuanto en cuanto se debe aplicar el estilo */
+            .pseudoclases-posicion li:nth-child(3n) {
+              font-weight: bold;
+            }
+    
+            /* Se indica que se debe aplicar el estilo dependiendo si el elemento está en un posición ár o impar*/
+            .pseudoclases-posicion li:nth-child(even) {
+              background-color: bisque;
+            }
+            .pseudoclases-posicion li:nth-child(odd) {
+              background-color: rgb(244, 197, 140);
+    
+           </code>
+      </pre>
+      <p>Para lograr este mismo efecto por tipo de elementos, por ejemplo a nivel de párrafos o div, se usa el first-of-type. <br> Para exclir los elementos y que a estos no les sea aplicado el estilo, podemos excluir los elementos con el atributo not.</p>
+      </div>
+    </details>
+
+    <a href="/css.html#temario">⬆️</a>
+    <br><hr>
+
+
+   </section>
+
+   <section id="pseudoelementos">
+   <h2>Pseudoelementos</h2>
+   <a href="https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-elements" target="_blank">Documentación MDN</a>
+
+   <p>Permiten dar estilos a partes específicas de un elemento, para diferenciarlos de las pseudoclases se declaran con dlobles dos puntos (::). </p>
+
+   <p>
+    <i>Muñecos navideños</i> <span class="descripcion">Cojín papá Noel.</span> 
+    <span class="precio">80.000 </span>
+   </p>
+  
+   <p class="p-pseudoelementos">Es muy grato estar aprendiendo estas herramientas, sin duda me darán muvhas alegrías y satisfacciones, vamos para adelante Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium quod assumenda dicta iure quasi molestiae quidem laboriosam, aut ipsa ipsam sint ea reiciendis ut libero atque nobis earum odit repellendus!</p>
+   <br><br>
+
+  <a href="/css.html#temario">⬆️</a>
+   </section>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <hr>
+    <article id="glosario">
+      <h2>Glosario de declaraciones.</h2>
+
+      <dl> <b>Lista de Declaraciones más usadas</b>
+        <br>
+        <dt> background-color
+          <dd>Color de fondo</dd>
+        </dt>
+        <dt> color
+          <dd>Color de letra</dd>
+        </dt>
+        <dt> font-weight:bold
+          <dd>Negrita</dd>
+        </dt>
+        <dt> font-zise
+          <dd>Tamaño de la fuente</dd>
+        </dt>
+      </dl>
+    </article>
+  </body>
+</html>

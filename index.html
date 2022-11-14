@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!--     Etiqueta dónde se tiene el contenido HTML y como se adaptará el contenido -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--     Entre 55 y 65 caracteres -->
+    <title>Osqui Aprendiendo HTML</title>
+    <!--     No más de 165 caracteres por temas de CEO-->
+    <meta name="description" content="Página Guía para aprender HTML" />
+    <link rel="stylesheet" href="assets/styles.css"> 
+    <link rel="icon" href="/imagenes/soportar.png">
+    <link rel="apple-touch-icon" href="/imagenes/soportar.png">
+    <meta name="theme-color" content="#8B06FF">
+
+  </head>
+
+  <body>
+    <header>
+      <h1>Ruta de Aprendizaje</h1>
+      <ul>
+        <li><b>HTML</b></li>
+        <li><a href="/css.html"><b>CSS</b></a></li>
+        <li>
+          <b><mark>JavaScript</mark></b>
+        </li>
+        <li><b>React</b></li>
+      </ul>
+    </header>
+    <hr />
+    <h1>HTML</h1>
+    <h3 id="inicio">Temario del curso</h3>
+    <ul>
+      <li><a href="index.html#encabezados">Encabezados HTML</a></li>
+      <li><a href="index.html#texto-basico">Etiquetas de texto básicas</a></li>
+      <li><a href="index.html#formateo">Etiquetas de formateo</a></li>
+      <li><a href="index.html#semanticas">Estructuras semánticas HTML</a></li>
+      <li><a href="index.html#de-bloque-de-linea">Etiquetas de Bloque Vs Etiquetas de Línea</a></li>
+      <li><a href="index.html#imagenes">Imágenes</a></li>
+      <li><a href="index.html#svg">SVG</a></li>
+      <li><a href="index.html#figuras">Figuras</a></li>
+      <li><a href="index.html#listas-ordenadas">Listas Ordenadas</a></li>
+      <li><a href="index.html#listas-desordenadas">Listas desordenadas</a></li>
+      <li><a href="index.html#listas-definición">Listas de Definición</a></li>
+      <li><a href="index.html#tablas">Tablas</a></li>
+      <li><a href="index.html#enlaces">Enlaces</a></li>
+      <li><a href="index.html#script">Script en HTML</a></li>
+      <li><a href="/index.html#elementos-interactivos">Elementos Interactivos</a></li>
+      <li><a href="/index.html#audio-video">Audio y Video</a></li>
+      <li><a href="/index.html#iframes">iframes</a></li>
+      <li><a href="/index.html#formularios">Formularios</a></li>
+      <li><a href="/index.html#accesibilidad">Accesibilidad Web</a></li>
+
+    </ul>
+
+      <h2 id="encabezados">Encabezados HTML</h2>
+
+      <h1>&lt;h1/&gt;Encabezado nivel 1</h1>
+      <h2>&lt;h2/&gt;Encabezado nivel 2</h2>
+      <h3>&lt;h3/&gt;Encabezado nivel 3</h3>
+      <h4>&lt;h4/&gt;Encabezado nivel 4</h4>
+      <h5>&lt;h5/&gt;Encabezado nivel 5</h5>
+      <h6>&lt;h6/&gt;Encabezado nivel 6</h6>
+      <a href="index.html#inicio">🆙</a>
+      <hr>
+      <p>
+
+    <h2 id="texto-basico">Etiquetas de texto básicas</h2>
+        <p>Etiqueta &lt;p/&gt; = párrafos</p>
+        <b>Etiqueta  &lt;b/&gt; = Negrita </b> <br />
+        <i>Etiqueta  &lt;i/&gt; = Cursiva</i> <br />
+        <u>Etiqueta  &lt;u/&gt; = Subrayado</u> <br />
+        e=mc<sup>2 = Etiqueta  &lt;sup/&gt; (Superíndice)</sup> <br />
+        H <sub>2</sub>O = Etiqueta  &lt;sub/&gt; (Subíndice) <br />
+        <small>Etiqueta  &lt;small/&gt; =Letra pequeña</small> <br />
+        <mark>Etiqueta  &lt;mark/&gt; =Resaltado</mark> <br />
+        <strong>Etiqueta  &lt;strong/&gt; = esto es importante</strong> <br>
+        <em>Etiqueta  &lt;em/&gt; = Esto tiene énfasis, tiene un valor para el navegadorS</em>
+        <blockquote>Etiqueta  &lt;Blockquote/&gt; = Etiqueta para citar autores por ejemplo.</blockquote>
+      </p>
+      <a href="index.html#inicio">🆙</a>
+      <hr />
+
+      <h2 id="formateo">Etiquetas de formateo</h2>
+      <pre>
+        &lt;pre/&gt; :
+         - Estudiar los cinco videos de @JonMircha, esta etiqueta guarda el formato del texto ingresado en el código
+      <code> &lt;code/&gt;Code = etiqueta  que sirve para que se muestre un código, para que se vea se deben aplicar caracteres especiales.</code>
+      <code> &lt;DIV&gt;</code>
+      </pre>
+      <a href="index.html#inicio">🆙</a>
+      <hr>
+
+      <h2 id="semanticas">Estructuras semánticas HTML</h2>
+
+    <div>&lt;div/&gt; = Etiqueta contenedora que no tiene semántica</div> <br>
+    <header>&lt;header/&gt; = Cabecera de un sitio web o de una sección</header>
+    <div>&lt;main/&gt; = Define la sección ppal del documento, solo puede existir una etiqueta main por cada documento</div> <br>
+    <nav>&lt;nav/&gt; = representa una navegación o botonera</nav>
+    <article>&lt;article/&gt; = representa una sección de autocontenido (que se explica por sí sola, ejemplo un artículo en una revista) </article><br>
+    <aside>&lt;aside/&gt; = representa un contenido complementario o secundario.</aside>
+    <section>&lt;section/&gt; = representa una sección de contenido genérica.</section>
+    <address>&lt;address/&gt; = Representa direcciones.</address>
+    <a href="index.html#inicio">🆙</a>
+    <hr>
+
+    <h2 id="de-bloque-de-linea">Etiquetas de Bloque Vs Etiquetas de Línea</h2>
+    <div style="background-color: rgb(72, 227, 11);">El contenedor de bloque por excelencia es el &lt;div/&gt;, es aquella que genera saltos de línea con sus etiquetas hermandas y ocupa todo el ancho de la pantalla.</div>
+    <span style="background-color: aqua;">El contenedos por excelencia de línea es el &lt;span/&gt;, ocupa únicamente el espacio de su contenido</span>
+    <span style="background-color: rgb(144, 144, 206);">Hola soy otra Span jjrjr</span>
+      <a href="index.html#inicio">🆙</a>
+    <hr>
+
+    <h2 id="imagenes">Imágenes</h2>
+    <p></p>
+    <img src="/imagenes/periodic Table HTML.png" alt="Tabla periodica HTML" >
+    <hr>
+
+    <h2 id="svg">SVG</h2>
+    <img src="/imagenes/bear-svgrepo-com.svg" alt="SVG-Oso" height="150" width="150">
+      <a href="index.html#inicio">🆙</a>
+    <hr>
+
+    <h2 id="figuras">Figuras</h2>
+    <p> Etiqueta &lt;figure/&gt;, usada para poner imágenes con su referencia al lado. Se complementa la &lt;img/&gt; con la descripción en la etiqueta &lt;figcaption/ dónde se registra la referencia.&gt;</p>
+    <figure>
+      <img src="/imagenes/periodic Table HTML.png" alt="Tabla ériodoca HTML">
+      <figcaption>Referencia: Tabla Periodoca de las etiquetas HTML.</figcaption>
+    </figure>
+    <a href="index.html#inicio">🆙</a>
+    <hr>
+
+    <h2 id="listas-ordenadas">Listas Ordenadas &lt;ol/&gt;</h2>
+    <h3>Las Estaciones del año</h3>
+    <ol>
+      <li>Invierno</li>
+      <li>Verano</li>
+      <li>Otoño</li>
+      <li>Primavera</li>
+    </ol>
+    <h4>Invertida &lt;ol reversed&gt;</h4>
+    <ol reversed>
+      <li>Invierno</li>
+      <li>Verano</li>
+      <li>Otoño</li>
+      <li>Primavera</li>
+    </ol>
+    <h4>Con inicio diferente &lt;ol start="2"&gt;</h4>
+    <ol start="2">
+      <li>Invierno</li>
+      <li>Verano</li>
+      <li>Otoño</li>
+      <li>Primavera</li>
+    </ol>
+    <h4>Con numeración diferente &lt;ol type="a"&gt;</h4>
+    <ol type="a">
+      <li>Invierno</li>
+      <li>Verano</li>
+      <li>Otoño</li>
+      <li>Primavera</li>
+    </ol>
+    <h2 id="listas-desordenadas">Listas Desordenadas &lt;ul &gt;</h2>
+    <h4>Cosas por Hacer </h4>
+    <ul>
+      <li>Terminar el curso de HTML</li>
+      <li>Hacer el curso de CSS</li>
+      <li>Hacer el curso de maquetación</li>
+      <li>Hacer el curso de React</li>
+      <li>Hacer el curso de Next.js</li>
+    </ul>
+    <h4>Cosas por Hacer &lt;ul type="circle"&gt; </h4>
+    <ul type="circle">
+      <li>Terminar el curso de HTML</li>
+      <li>Hacer el curso de CSS</li>
+      <li>Hacer el curso de maquetación</li>
+      <li>Hacer el curso de React</li>
+      <li>Hacer el curso de Next.js</li>
+    </ul>
+    <h4>Cosas por Hacer &lt;ul type="square"&gt;</h4>
+    <ul type="square">
+      <li>Terminar el curso de HTML</li>
+      <li>Hacer el curso de CSS</li>
+      <li>Hacer el curso de maquetación</li>
+      <li>Hacer el curso de React</li>
+      <li>Hacer el curso de Next.js</li>
+    </ul>
+
+    <h2 id="listas-definición">Listas de definición</h2>
+    <p>Se usan las etiquetas &lt;dl/&gt; = Definition List, &lt;dt/&gt; = Definition Term y &lt;dd/&gt;Definition Data</p>
+    <dl>
+      <dt>HTML</dt>
+      <dd>Es el lenguaje para definir la estructura del contenido de la Web</dd>
+    </dl>
+
+    <a href="index.html#inicio">🆙</a>
+    <hr>
+    
+    <h2 id="tablas">Tablas</h2>
+    <h4>Tabla sencilla</h4>
+    <p>Etiquetas usadas &lt;table/&gt; = Define la tabla. &lt;tr/&gt; = Nueva Fila. &lt;td/&gt; = dato.</p>
+    <table>
+      <tr>
+        <td>Nombre</td>
+        <td>Apellido</td>
+        <td>Edad</td>
+      </tr>
+      <tr>
+        <td>Oscar</td>
+        <td>Clavijo</td>
+        <td>32</td>
+      </tr>
+      <tr>
+        <td>Oscar</td>
+        <td>Clavijo</td>
+        <td>32</td>
+      </tr>
+    </table>
+
+    <h3>Tabla estructurada</h3>
+    <p>Etiquetas usadas además de las usadas en la tabla básica: &lt;thead/&gt; = Define los títulos de la tabla (cabecera de la tabla). &lt;tbody/&gt; = Contenido de la tabla. &lt;tfoot/&gt; = Pie de página de la tabla.</p>
+    <p>Se complemeta con atributos como el colpan que defile un dato cuántas columnas debe abarcar (como combinar celdas) y rowspan que combina un datos en varias filas.</p>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="3">Tabla de Nombres</th>
+        </tr>
+        <tr>
+        <th>Nombre</th>
+        <th>Apllido</th>
+        <th>Edad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ryan</td>
+          <td>Ranols</td>
+          <td>38</td>
+        </tr>
+        <tr>
+          <td>Alicia</td>
+          <td>keys</td>
+          <td>45</td>
+        </tr>
+        <tr>
+          <td>Sadona</td>
+          <td>Santa</td>
+          <td>52</td>
+        </tr>
+      </tbody>
+      <tfoot></tfoot>
+    </table>
+    <a href="index.html#inicio">🆙</a>
+    <hr>
+    <h2 id="enlaces">Enlaces</h2>
+    <p>Etiqueta &lt;a/&gt;, es posible insertar imágenes que sirvan como enlaces y muy muy importante el uso del atributo terget para definir si se debe seguir el anlace en la misma pestaña o en una nueva, así como el atributo rel dependiendo si el buscador debe o no(nofollow) tener en cuenta el nuevo sitio para temas de seguimiento (SEO).</p>
+
+    <a href="https://jonmircha.com/" target="_blank" rel="nofollow">Sitio web JonMircha</a> <br>
+
+    <a href="https://jonmircha.com/cursos"><img src="/imagenes/bear-svgrepo-com.svg" alt="Bear SVG" width="100"></a>
+    <h5>Enlaces internos (en la misma página) se hacen mediante la asignación de id a las etiquetas que se quienen tener como puntos de navegación y posteriormente vinculando mediante &lt;a/&gt; con su href la ruta destino, ejemplo index.html#inicio</h5>
+    <a href="index.html#inicio">🆙</a>
+
+    <h4>Enlaces especiales</h4>
+    <a href="mailto:oscar.clavijo@gmail.com">Enlace a Envío Correo</a>
+    <br>
+    <a href="tel:57304535098">Enlace a teléfono</a>
+    <br>
+    <a href="https://api.whatsapp.com/send?phone=573045302118&text=Hola!me interesa el catálogo.">Enlace hacia WhatsApp</a>
+    <hr>
+    <h2 id="elementos-interactivos">Elementos Interactivos</h2>
+
+    <h4>Botones</h4>
+    <p>&lt;button/&gt;,es posible asignar a este elementos atributos llamados eventos, que controlan las acciones a partir de lo que haga el usuario.</p>
+    <button onclick="alert('Hola, soy una alerta')">Un Botón</button> <br>
+
+    <h4>Acordeon &lt;details/&gt;</h4>
+    <details open>
+      <summary>Acordeón 1 </summary>
+        <h3>Tabla Periodica HTML</h3>
+        <img src="/imagenes/periodic Table HTML.png" alt="Tabla Periodica HTML">
+        <article>Acordeon</article>
+    </details>
+    
+    <details>
+      <summary>Acordeón 2 </summary>
+        <h3>Tabla Periodica HTML</h3>
+        <article>Este acordeon se logra con la etiqueta &lt;details&gt; y dentro de esta una etiquera contenedora y dentro de esta los elementos que se requieran.</article>
+        <img src="/imagenes/periodic Table HTML.png" alt="Tabla Periodica HTML">
+    </details>
+    
+    <h3>Ventana Modal</h3>
+    <dialog open> &lt;dialog&gt;Esta es una pestaña modal que aún no está soportada por todos los navegadores</dialog>
+    <br><br><br>
+
+    <br>
+    <a href="index.html#inicio">🆙</a>
+    <hr>
+
+    <h2 id="audio-video">Audio y Video</h2>
+
+    <h3>&lt;audio/&gt;</h3>
+    <audio src="/media/sfx-animal-bird1.mp3" controls preload></audio>
+    <br>
+    <hr>
+
+    <h3>&lt;video/&gt;, se pueden añadir propiedades como poster, preload, controls....</h3>
+    <video src="/media/Pexels Videos 2278095.mp4" controls preload></video>
+    <br><br>
+    <a href="index.html#inicio">🆙</a>
+
+    <h2 id="iframes">Iframes</h2>
+
+    <h3> &lt;iframe/&gt; Funciona para insertar un contenido externo.</h3>
+    
+    <iframe src="/hola.html" frameborder="3"></iframe>
+    <p>En este caso al conectar a un sitio externo rechaza la conexión.</p>
+    <iframe src="https://www.youtube.com/watch?v=jfKfPfyJRdk" frameborder="1"></iframe>
+    <br>
+    <iframe src="/media/cheat-sheet.pdf" frameborder="1"></iframe>
+    <br>
+    <h3>Ejemplo insertando el código directamente de Google maps (Compartir e insertar un mapa)</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1881.330786056552!2d-99.16869369208443!3d19.427023126223578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff35f5bd1563%3A0x6c366f0e2de02ff7!2sEl%20%C3%81ngel%20de%20la%20Independencia!5e0!3m2!1ses!2sco!4v1666836038278!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <h3>insertar vido de Youtube (Compartir &lt; &gt; )</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/F55LNTW3GE0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br><br>
+    <a href="index.html#inicio">🆙</a>
+
+    <hr>
+    <h2 id="formularios">Formularios</h2>
+    <details>
+      <summary><b>Elementos del formulario</b></summary>
+      <div>
+          <h5>Texto &lt;input type="text"&gt</h5>
+          <input type="text">
+          <br>
+          <h5>Checkbox &lt;input type="checkbox"&gt</h5>
+          <input type="checkbox">
+          <br>
+          <h5>radio &lt;input type="radio"&gt</h5>
+          <input type="radio"/>
+          <br>
+          <h5>Color &lt;input type="color"&gt</h5>
+          <input type="color">
+          <h5>Date</h5>
+          <input type="date">
+          <br>
+          <h5>Botones &lt;input type="button"&gt;</h5>
+          <input type="button" value="Botón">
+          <input type="submit" value="Enviar">
+          <input type="reset">
+          <input type="file" multiple> <!--El atributo multiple permite seleccionar varios archivos-->
+          <br>
+          <input type="hidden" value="es">
+          <br>
+          <h5>Correo &lt;input type="email"&gt;</h5>
+          <input type="email" name="email" id="email">
+          <br>
+          <h5>Contraseña &lt;input type="password"&gt;</h5>
+          <input type="password" name="password" id="password">
+          <br>
+          <h5>Números &lt;input type="number"&gt</h5>
+          <input type="number" name="age" id="age">
+          <br>
+          <h5>Teléfonos &lt;input type="tel"&gt</h5>
+          <input type="tel">
+          <br>
+          <h5>caja de búsqueda &lt;input type="search"&gt</h5>
+          <input type="search">
+          <br><br>
+          <h5>Área de texto &lt;textarea/&gt</h5>
+          <textarea cols="50" rows="8"></textarea>
+          <br>
+          <h5>Select &lt;select&gt y dentro del select las diferentes opciones de selección en etiquetas &lt;option&gt;</h5>
+
+          <select name="" id="">
+            <option value="">HTML</option>
+            <option value="">CSS</option>
+            <option value="">Js</option>
+            <option value="">React</option>
+            <option value="">Next</option>
+          </select>
+          <br><br>
+          <h5>Input con propiedades de solo lectura (readonly) y deshabilitado (disable)</h5>
+          <input type="text"  value="Oscar " readonly disabled>
+          <br><br>
+          <h5>Input con atributo placeholder</h5>
+          <input type="text" placeholder=" correo@micorreo.com.co">
+      </div>
+    </details>
+    <br>    
+   <details>
+    <summary><b>Ejemplo 1 Formulario</b></summary>
+    <article>
+      <h5>&lt;form/&gt; por defecto trae el atributo action que define hacia dónde apunta el formulario. Se complementan con &lt;label/&gt; que sirve para mostrar un texto de lo que se requiere en el input, por ejemplo el usuario: y por otro lado referencia al for del label mcon el id del input.</h5>
+      <h6>Formulario de Login</h6>
+
+      <form action="https://jonmircha.com/" method="POST" autocomplete="off">
+
+        <label for="usuario">Usuario: </label>
+        <input type="text" name="usuario" id="usuario"  placeholder="Usuario"  pattern="^[A-Za-z]+$" title="Este campo solo admite letras"  required>
+        <br><br>
+
+        <label for="password">Contraseña: </label>
+        <input type="password" name="password" id="password" placeholder="Clave" required>
+        <br><br>
+
+        <input type="submit">
+        <br><br>
+        <input type="reset">
+        
+      </form>
+      <p>Al enviar estos datos a la url indicada en el atributo action del form, por defecto se usa el método GET, el cuál envía los datos vía URL, así (https://jonmircha.com/?usuario=o.Clavijo%40dev.com.co&password=12345). <br> <br> Por lo anterior, si podemos asignar el method en el form submit a POST de tal forma que los datos viajen en la cabecera ocultos.</p>
+
+      <p>Estos input se gestionan por medio de los atributos que se les asignan, como method=GET o POST, required= Campo obligatorio, autocomplete=ON u OFF, pattern= Patrón (expresiones regulares que definen en formato de datos del campo), title=mensaje para orientar al usuario del formato del campo</p>    
+    </article>
+   </details>
+   <br>
+   <details>
+    <summary><b>Ejemplo 2 Formulario</b></summary>
+    <h5>Formulario con Lista de selección &lt;select/&gt;</h5>
+
+    <form>
+      <h3>Elige tu idioma</h3>
+      <select name="idioma" id="idioma" multiple required > 
+        <option value="" disabled>Elije los idiomas que dominas</option>
+        <option value="esp">Español</option>
+        <option value="ing">Inglés</option>
+        <option value="fra">Francés</option>
+        <option value="man">Mandarín</option>
+        <option value="por">Portugués</option>
+      </select>
+
+      <h3>Elije tu lenguaje de programación favorito.</h3>
+      <input type="radio" name="lenguaje" id="radio-js" value="js" required>
+      <label for="radio-js">JavaScript</label>
+      <input type="radio" name="lenguaje" id="radio-py" value="py">
+      <label for="radio-py">Python</label>
+      <input type="radio" name="lenguaje" id="radio-php" value="php">
+      <label for="radio-php">PHP</label>
+      <br>
+      <h4>Elige tus intereses</h4>
+      <label >
+        <input type="checkbox" name="intereses" value="ciclismo">
+        Ciclismo
+      </label>
+      <label >
+        <input type="checkbox" name="intereses" value="futbol">
+        Fútbol
+      </label>
+      <label >
+        <input type="checkbox" name="intereses" value="lectura">
+        Lectura
+      </label>
+      <label >
+        <input type="checkbox" name="intereses" value="cine">
+        Cine
+      </label>
+      <br><br>
+      <label>
+        <input type="checkbox" name="terminos" required>
+        Términos y condiciones
+      </label>
+      <input type="submit">
+      <input type="reset" >
+    </form>
+    <P>Al enviar los datos del formulario mediante el submit, el valor que se envía en la url es el value de cada option. http://127.0.0.1:5501/index.html?idioma=ing&idioma=fra&lenguaje=js#formularios. <b>Importante que todos los input tengan el mismo valor de name.</b></P>
+   </details>
+    <br><br>
+    <details open>
+      <summary><b>Ejemplo 3 Formulario (Conectado a Formsubmit)</b></summary>
+      <article>
+          <form action="https://formsubmit.co/oscar.clavijo90@gmail.com" method="POST">
+          <input type="text" name="Nombre" placeholder="Nombres y apellidos" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="En formato alfabético con espacios" required>
+          <input type="email" name="E-mail" pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$" required title="Ingrese un formato de correo válido" placeholder="Correo" required>
+          <button type="submit">Enviar</button>
+          <button type="reset">Borrar</button>
+            </form>
+      </article>
+    </details>
+    <br><br>
+        <a href="index.html#inicio">🆙</a>
+    <br><br>
+    <hr>
+    <h2 id="accesibilidad">Accesibilidad Web</h2>
+    <p>Herramientas para ayudar a personas con capacidades diferentes.
+    </p>
+    <h3 role="title">Las estaciones del año:</h3>
+    <ul role="list">
+      <li role="listitem">Primavera</li>
+      <li role="listitem">Verano</li>
+      <li role="listitem">Otoño</li>
+      <li role="listitem">Invierno</li>
+    </ul>
+
+    <a href="index.html#inicio">🆙</a>
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <h2 id="script">Script en HTML</h2>
+    <p>&lt;script/&gt;, siempre deben quedar en la parte de abajo del código.</p>
+    <script>
+      console.log("hola mundo")
+    </script>
+    <script src="/assets/codigo.js"></script>
+    <p>intentando conectar el celu</p>
+    </body>
+</html>

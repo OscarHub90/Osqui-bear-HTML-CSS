@@ -1,0 +1,25 @@
+h2 {
+  background-color: blanchedalmond;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+img {
+  max-width: 70%;
+  height: auto;
+}
+
+video {
+  max-width: 50%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+iframe {
+  width: 70%;
+  height: 400px;
+}
